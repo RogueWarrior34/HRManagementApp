@@ -1,1 +1,1 @@
-java -classpath ..\netclient\build\libs\netclient.jar;..\netcommon\build\libs\netcommon.jar;..\proxybl\build\libs\proxybl.jar;build\libs\pl.jar;F:\JavaTools\itext7\*;. com.run.machines.hr.pl.Main
+java -classpath ..\netclient\build\libs\netclient.jar;..\netcommon\build\libs\netcommon.jar;..\proxybl\build\libs\proxybl.jar;build\libs\pl.jar;F:\JavaTools\itext7\*;. com.rw.machines.hr.pl.Main
