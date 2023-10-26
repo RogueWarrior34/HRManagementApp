@@ -89,7 +89,8 @@ I welcome contributions to the HR Management Application. If you have ideas for 
 ## Contact
 For any questions, feedback, or inquiries, please reach out to [Rogue](mailto:adityade343@gmail.com).
 
-
+## License
+The HR Management Application is open-source software released under the MIT License. You are free to use, modify, and distribute it according to the terms specified in the [license](https://github.com/RogueWarrior34/HRManagementApp/blob/main/LICENSE).
 
 
 
