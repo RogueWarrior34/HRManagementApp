@@ -1,5 +1,5 @@
 # HR Management Application
-## (As of right now, it's an ongoing project. The Employee Module is being worked on, and the Designation Module is complete as of right now.)
+## (As of right now, it's an ongoing project. The Employee Module is being worked on, and the Designation Module is complete.)
 
 The HR Management Application is a comprehensive Java Swing-based solution for efficient Human Resource management within organizations. It is structured with three essential layers: Presentation Layer, Business Layer, and Data Layer, allowing flexibility in data storage through File Handling or an SQL Database. Additionally, it includes a Network Layer for facilitating communication across a network, enabling multiple users to perform CRUD operations on Employee and Designation databases simultaneously.
 
@@ -38,6 +38,8 @@ The Data Layer offers two data storage options:
 - SQL Database: Select an SQL database as the data storage solution for robust and scalable storage, ideal for organizations with extensive HR data requirements.
 
 ## Usage
+(Every layer is built using Gradle except dl i.e File Handling version of the Data Layer and common i.e enums for Gender)
+
 To get started with the HR Management Application, follow these steps:
 
 1. Clone this repository to your local machine or download the source code.
@@ -48,7 +50,7 @@ To get started with the HR Management Application, follow these steps:
     - To use File handling, include dl in your classpath.
       - *designation.data* will be created when you add your first designation through the application(Custom file is not recommended).
     - To use SQL database, include dbdl in your classpath.
-        - Make sure to create appropriate tables for Designations and Employee.
+        - Make sure to create appropriate database and tables for Designations and Employee.
         - I have created the Designation table as :-
              - code int primary key auto_increment,
              - title char(35) not null unique
@@ -78,11 +80,9 @@ To get started with the HR Management Application, follow these steps:
    - Then in pl directory, use the command mentioned in pl\run.txt.
    - Currently network module uses a proxy business layer. In future I plan to eliminate this extra step and use my own NetFramework(currently a prototype, will link the repo in near future) for this app.
 
-6. If you want to change client configuration, make changes to *pl/server.xml*.
+6. If you want to change server configuration, make changes to *hrserver/server.xml* and *pl/server.xml*.
 
-7. If you want to change server configuration, make changes to *hrserver/server.xml*.
-
-8. If you wish to change the PDF format, you will have to make changes in  *exportToPDF()* inside *DesignationModel.java* in *pl\src\main\java\com\rw\machines\hr\pl\model*.
+7. If you wish to change the PDF format, you will have to make changes in  *exportToPDF()* inside *DesignationModel.java* in *pl\src\main\java\com\rw\machines\hr\pl\model*.
 
 ## Example
 ![GUI](pl/screenshots/1.png)
