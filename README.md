@@ -17,6 +17,8 @@ The HR Management Application simplifies HR tasks and processes by offering a us
 
 - Network Communication: The Network Layer facilitates communication across a network, enabling multiple users to access and interact with the application simultaneously.
 
+- Export to PDF:- You can easily export the database to PDF(Currently only works for designations).
+
 ## Application Layers
 The HR Management Application is structured into the following layers:
 
@@ -74,8 +76,13 @@ To get started with the HR Management Application, follow these steps:
 5. If you want to use the network module:-
    - First start the hrServer, use the command mentioned in hrserver\run.txt.
    - Then in pl directory, use the command mentioned in pl\run.txt.
-   - Currently network module uses a proxy business layer. In future I plan to use my own NetFramework(currently a prototype) for this app.
+   - Currently network module uses a proxy business layer. In future I plan to eliminate this extra step and use my own NetFramework(currently a prototype, will link the repo in near future) for this app.
 
+6. If you want to change client configuration, make changes to *pl/server.xml*.
+
+7. If you want to change server configuration, make changes to *hrserver/server.xml*.
+
+8. If you wish to change the PDF format, you will have to make changes in  *exportToPDF()* inside *DesignationModel.java* in *pl\src\main\java\com\rw\machines\hr\pl\model*.
 
 ## Example
 Suppose you have configured the application to use an SQL Database for data storage. You can use the GUI to:
