@@ -1,7 +1,7 @@
 # HR Management Application
 ## (As of right now, it's an ongoing project. The Employee Module is being worked on, and the Designation Module is complete as of right now.)
 
-The HR Management Application is a comprehensive Java-based solution for efficient Human Resource management within organizations. It is structured with three essential layers: Presentation Layer, Business Layer, and Data Layer, allowing flexibility in data storage through File Handling or an SQL Database. Additionally, it includes a Network Layer for facilitating communication across a network, enabling multiple users to perform CRUD operations on Employee and Designation databases simultaneously.
+The HR Management Application is a comprehensive Java Swing-based solution for efficient Human Resource management within organizations. It is structured with three essential layers: Presentation Layer, Business Layer, and Data Layer, allowing flexibility in data storage through File Handling or an SQL Database. Additionally, it includes a Network Layer for facilitating communication across a network, enabling multiple users to perform CRUD operations on Employee and Designation databases simultaneously.
 
 ## Introduction
 The HR Management Application simplifies HR tasks and processes by offering a user-friendly graphical interface built using Java Swing. Users can seamlessly perform CRUD operations, including Create, Read, Update, and Delete, on both Employee and Designation databases. Its modular architecture allows for flexibility and scalability, making it a valuable asset for HR departments in various organizations.
@@ -85,11 +85,23 @@ To get started with the HR Management Application, follow these steps:
 8. If you wish to change the PDF format, you will have to make changes in  *exportToPDF()* inside *DesignationModel.java* in *pl\src\main\java\com\rw\machines\hr\pl\model*.
 
 ## Example
-Suppose you have configured the application to use an SQL Database for data storage. You can use the GUI to:
+![GUI](pl/screenshots/1.png)
 
+Suppose you have configured the application to use an SQL Database for data storage. You can use the GUI to:
 - Add new employees and designations.
+      - ![Adding designation](pl/screenshots/2.png)
+      - ![Designation added](pl/screenshots/3.png)
+  
 - View and edit employee and designation details.
+      - ![Update designation](pl/screenshots/4u.png)
+  
 - Delete employees and designations when necessary.
+      - ![Delete designation](pl/screenshots/5d.png)
+  
+- Export data to PDF
+      - ![Export to PDF](pl/screenshots/6p.png)
+      - ![Exported to PDF](pl/screenshots/7p.png)
+  
 - All changes will be seamlessly reflected in the SQL database.
 
 ## Contributing
