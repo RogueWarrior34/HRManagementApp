@@ -24,7 +24,7 @@ The HR Management Application is structured into the following layers:
 
 - Presentation Layer: The user interacts with the application through this layer, built using Java Swing, ensuring a user-friendly and responsive experience.
 
-- Business Layer: This layer houses the core application logic, handling CRUD operations and other HR-related functionalities. A Proxy Business Layer enhances security and control.
+- Business Layer: This layer houses the core application logic, handling CRUD operations and other HR-related functionalities.
 
 - Data Layer: The Data Layer is responsible for data storage and retrieval. You can choose between File Handling or an SQL Database for data storage, adapting the application to meet your organization's specific needs.
 
