@@ -40,11 +40,29 @@ To get started with the HR Management Application, follow these steps:
 
 1. Clone this repository to your local machine or download the source code.
 
-2. Configure your preferred data storage option by setting up the appropriate data source (File Handling or SQL Database).
+2. Make sure to download itext7 and mysql library.
 
-3. Build and run the application using your Java development environment.
-
-4. Interact with the user-friendly GUI to perform CRUD operations on the Employee and Designation databases.
+3. Configure your preferred data storage option by setting up the appropriate data source (File Handling or SQL Database).
+- To use File handling, include dl in your classpath.
+- To use SQL database, include dbdl in your classpath.
+    - Make sure to create appropriate tables for Designations and Employee.
+    - I have created the Designation table as :-
+         - code int primary key auto_increment,
+         - title char(35) not null unique
+    - The Employee table is as follows:-
+        - employee_id int primary key auto_increment,
+        - name char(35) not null,
+        - designation_code int not null,
+        - date_of_birth date not null,
+        - basic_salary decimal(12,2) not null,
+        - gender char(1) not null,
+        - is_indian boolean not null,
+        - pan_number char(20) not null unique,
+        - aadhar_card_number char(20) not null unique,
+        - foreign key (designation_code) references designation(code)
+    - If you wish to change any of the above tables according to your own preferences, make sure to study the code properly and change it accordingly. You will have to change the POJOs and DTO files.
+    - *insert self-promotion* You can use the SetterGetterGenerator repo of mine if you decide that you need new POJOs and DTOs, it will surely make your work easier.
+    - Check DAOConnection.java in *dbdl\src\main\java\com\rw\machines\hr\dl\dao* and make changes according to your database.
 
 ## Example
 Suppose you have configured the application to use an SQL Database for data storage. You can use the GUI to:
