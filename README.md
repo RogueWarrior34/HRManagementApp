@@ -43,24 +43,25 @@ To get started with the HR Management Application, follow these steps:
 2. Make sure to download itext7 and mysql library.
 
 3. Configure your preferred data storage option by setting up the appropriate data source (File Handling or SQL Database).
-- To use File handling, include dl in your classpath.
-- To use SQL database, include dbdl in your classpath.
-    - Make sure to create appropriate tables for Designations and Employee.
-    - I have created the Designation table as :-
-         - code int primary key auto_increment,
-         - title char(35) not null unique
-    - The Employee table is as follows:-
-        - employee_id int primary key auto_increment,
-        - name char(35) not null,
-        - designation_code int not null,
-        - date_of_birth date not null,
-        - basic_salary decimal(12,2) not null,
-        - gender char(1) not null,
-        - is_indian boolean not null,
-        - pan_number char(20) not null unique,
-        - aadhar_card_number char(20) not null unique,
-        - foreign key (designation_code) references designation(code)
-    - If you wish to change any of the above tables according to your own preferences, make sure to study the code properly and change it accordingly. You will have to change the POJOs and DTO files.
+    - To use File handling, include dl in your classpath.
+      - *designation.data* will be created when you add your first designation through the application(Custom file is not recommended).
+    - To use SQL database, include dbdl in your classpath.
+        - Make sure to create appropriate tables for Designations and Employee.
+        - I have created the Designation table as :-
+             - code int primary key auto_increment,
+             - title char(35) not null unique
+        - The Employee table is as follows:-
+            - employee_id int primary key auto_increment,
+            - name char(35) not null,
+            - designation_code int not null,
+            - date_of_birth date not null,
+            - basic_salary decimal(12,2) not null,
+            - gender char(1) not null,
+            - is_indian boolean not null,
+            - pan_number char(20) not null unique,
+            - aadhar_card_number char(20) not null unique,
+            - foreign key (designation_code) references designation(code)
+    - If you wish to change any of the above tables according to your own preferences, make sure to study the code properly and change it accordingly. You will have to change the POJOs and DTO files if you make any changes to the tables.
     - *insert self-promotion* You can use the SetterGetterGenerator repo of mine if you decide that you need new POJOs and DTOs, it will surely make your work easier.
     - Check DAOConnection.java in *dbdl\src\main\java\com\rw\machines\hr\dl\dao* and make changes according to your database.
 
@@ -73,6 +74,7 @@ To get started with the HR Management Application, follow these steps:
 5. If you want to use the network module:-
    - First start the hrServer, use the command mentioned in hrserver\run.txt.
    - Then in pl directory, use the command mentioned in pl\run.txt.
+   - Currently network module uses a proxy business layer. In future I plan to use my own NetFramework(currently a prototype) for this app.
 
 
 ## Example
