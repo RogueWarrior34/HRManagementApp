@@ -73,7 +73,7 @@ Suppose you have configured the application to use an SQL Database for data stor
 - All changes will be seamlessly reflected in the SQL database.
 
 ## Contributing
-I welcome contributions to the HR Management Application. If you have ideas for improvements, bug fixes, or new features, please open an issue or create a pull request on the GitHub repository.
+I welcome contributions to the HR Management Application. If you have ideas for improvements, bug fixes, or new features, please open an issue or create a pull request on the [repository](https://github.com/RogueWarrior34/HRManagementApp).
 
 ## Contact
 For any questions, feedback, or inquiries, please reach out to [Rogue](mailto:adityade343@gmail.com).
