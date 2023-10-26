@@ -64,6 +64,17 @@ To get started with the HR Management Application, follow these steps:
     - *insert self-promotion* You can use the SetterGetterGenerator repo of mine if you decide that you need new POJOs and DTOs, it will surely make your work easier.
     - Check DAOConnection.java in *dbdl\src\main\java\com\rw\machines\hr\dl\dao* and make changes according to your database.
 
+4. If you don't want to use the network module, just run the app from CMD in the *pl* directory with the following command:-
+   
+   ```
+   java -classpath ..\common\dist\hr-common.jar;..\dbdl\build\libs\dbdl.jar;..\bl\build\libs\bl.jar;build\libs\pl.jar;libs\*;..\mysqljar\*;. com.rw.machines.hr.pl.Main
+
+   ```
+5. If you want to use the network module:-
+   - First start the hrServer, use the command mentioned in hrserver\run.txt.
+   - Then in pl directory, use the command mentioned in pl\run.txt.
+
+
 ## Example
 Suppose you have configured the application to use an SQL Database for data storage. You can use the GUI to:
 
