@@ -102,6 +102,8 @@ Suppose you have configured the application to use an SQL Database for data stor
       - ![Export to PDF](pl/screenshots/6p.png)
       - ![Exported to PDF](pl/screenshots/7p.png)
   
+  - You can check an example of the exported pdf [here](pl/eg.pdf).
+    
 - All changes will be seamlessly reflected in the SQL database.
 
 ## Contributing
