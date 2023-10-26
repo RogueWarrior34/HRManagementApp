@@ -1,5 +1,0 @@
-apply plugin: 'java'
-dependencies {
-implementation files('F:/JavaProjects/hr2/hr/dl/dist/hr-dl-1.0.jar','F:/JavaProjects/hr2/hr/common/dist/hr-common.jar','../bl/build/libs/bl.jar',)
-implementation fileTree(include: '*.jar', dir: 'libs')
-}
